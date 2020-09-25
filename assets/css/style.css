@@ -580,8 +580,13 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
   align-items: flex-start;
   align-content: stretch;
   min-height: 700px;
-  background: url(../../assets/img/banner.png) no-repeat 50% 50%;
+  background: url(../../assets/img/obgyncrew.jpg) no-repeat 50% 50%;
   background-size: cover;
+}
+@media (max-width: 700px) {
+  .banner {
+    background-position: 95% 50%;
+  }
 }
 .banner span, .banner h2, .banner p {
   width: 50%;

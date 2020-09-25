@@ -282,8 +282,12 @@ section {
     align-items: flex-start;
     align-content: stretch;
     min-height: 700px;
-    background: url(../../assets/img/banner.png) no-repeat 50% 50%;
+    background: url(../../assets/img/obgyncrew.jpg) no-repeat 50% 50%;
     background-size: cover;
+
+    @include break(700 max) {
+        background-position: 95% 50%;
+    }
 
     span, h2, p {
         width: 50%;
