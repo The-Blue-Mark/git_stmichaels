@@ -282,20 +282,80 @@ section {
     align-items: flex-start;
     align-content: stretch;
     min-height: 700px;
-    background: url(../../assets/img/obgyncrew.jpg) no-repeat 50% 50%;
-    background-size: cover;
+    background: #f3f3f3 url(../../assets/img/obgyncrew-trans.png) no-repeat 100% 100px;
+    background-size: 60% auto;
 
-    @include break(700 max) {
-        background-position: 95% 50%;
+
+
+    @include break(1400 max) {
+        background-size: 70% auto;
+
+        .container {
+            max-width: none!important;
+        }
+    }
+
+    @include break(1200 max) {
+        justify-content: flex-start;
+        padding-top: 30px;
+        text-align: center;
+        background-position: 50% 300px;
+
+        .container {
+            h2 {
+                width:  60%;
+                max-width: none;
+            }
+
+            & > * {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    @include break(1000 max) {
+        background-position: 50% 300px;
+
+        .container {
+            .subtitle {
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                width:  90%;
+                max-width: none;
+                font-size: 22px;
+                line-height: 26px;
+            }
+
+            & > * {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    @include break(800 max) {
+        background-position: 50% 300px;
+        background-size: 100% auto;
+    }
+
+    @include break(800 max) {
+        background-position: 50% 400px;
+    }
+
+    @include break(450 max) {
+        background-position: 50% 465px;
     }
 
     span, h2, p {
         width: 50%;
         max-width: 600px;
 
-        @include break(700 max) {
+        @include break(800 max) {
             width: 100%;
-            background: rgba(255,255,255,.75);
             padding: 5px;
         }
     }
@@ -336,6 +396,11 @@ section {
         padding: 60px 55px 360px;
         box-shadow: $card-shadow;
         height: 100%;
+
+        @include break(max 600) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         
         h4 {
             margin-top: 0;
@@ -363,18 +428,20 @@ section {
 .video-grid {
     .video-grid-item:nth-child(1) > div:after {
         background-image: url(../../assets/img/doctors.svg);
+        background-size: auto 130%;
     }
     .video-grid-item:nth-child(2) > div:after {
         background-image: url(../../assets/img/phone.svg);
-        background-size: 90% auto;
-        background-position: 70% -40px;
+        background-size: auto 130%;
+        background-position: 50% -40px;
     }
     .video-grid-item:nth-child(3) > div:after {
         background-image: url(../../assets/img/docandpatient.svg);
+        background-size: auto 130%;
     }
     .video-grid-item:nth-child(4) > div:after {
         background-image: url(../../assets/img/coronavirus.svg);
-        background-size: 70% auto;
+        background-size: auto 130%;
     }
 }
 

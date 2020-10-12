@@ -580,22 +580,75 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
   align-items: flex-start;
   align-content: stretch;
   min-height: 700px;
-  background: url(../../assets/img/obgyncrew.jpg) no-repeat 50% 50%;
-  background-size: cover;
+  background: #f3f3f3 url(../../assets/img/obgyncrew-trans.png) no-repeat 100% 100px;
+  background-size: 60% auto;
 }
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
   .banner {
-    background-position: 95% 50%;
+    background-size: 70% auto;
+  }
+  .banner .container {
+    max-width: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  .banner {
+    justify-content: flex-start;
+    padding-top: 30px;
+    text-align: center;
+    background-position: 50% 300px;
+  }
+  .banner .container h2 {
+    width: 60%;
+    max-width: none;
+  }
+  .banner .container > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .banner {
+    background-position: 50% 300px;
+  }
+  .banner .container .subtitle {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .banner .container h2 {
+    width: 90%;
+    max-width: none;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .banner .container > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    background-position: 50% 300px;
+    background-size: 100% auto;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    background-position: 50% 400px;
+  }
+}
+@media (max-width: 450px) {
+  .banner {
+    background-position: 50% 465px;
   }
 }
 .banner span, .banner h2, .banner p {
   width: 50%;
   max-width: 600px;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .banner span, .banner h2, .banner p {
     width: 100%;
-    background: rgba(255, 255, 255, 0.75);
     padding: 5px;
   }
 }
@@ -633,6 +686,12 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   height: 100%;
 }
+@media (max-width: 600px) {
+  .video-grid-item > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .video-grid-item > div h4 {
   margin-top: 0;
 }
@@ -654,18 +713,20 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
 
 .video-grid .video-grid-item:nth-child(1) > div:after {
   background-image: url(../../assets/img/doctors.svg);
+  background-size: auto 130%;
 }
 .video-grid .video-grid-item:nth-child(2) > div:after {
   background-image: url(../../assets/img/phone.svg);
-  background-size: 90% auto;
-  background-position: 70% -40px;
+  background-size: auto 130%;
+  background-position: 50% -40px;
 }
 .video-grid .video-grid-item:nth-child(3) > div:after {
   background-image: url(../../assets/img/docandpatient.svg);
+  background-size: auto 130%;
 }
 .video-grid .video-grid-item:nth-child(4) > div:after {
   background-image: url(../../assets/img/coronavirus.svg);
-  background-size: 70% auto;
+  background-size: auto 130%;
 }
 
 .video-grid-container.container {
