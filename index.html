@@ -19,6 +19,26 @@
   <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <body>
+  <div class="form-overlay">
+    <div class="form-box">
+      <div class="fb-control fb-50">
+        <input type="text" name="first-name" placeholder="First Name*" required />
+        <input type="text" name="last-name" placeholder="Last Name*" required />
+      </div>
+      <div class="fb-control">
+        <input type="email" name="email" placeholder="Email Address*" required />
+      </div>
+      <div class="fb-control">
+        <input type="phone" name="phone" placeholder="Phone Number"/>
+      </div>
+      <div class="fb-control">
+        <textarea name="message" rows="8" placeholder="Add additional info..." /></textarea>
+      </div>
+      <div class="fb-control">
+        <button type="submit" name="send" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="container">
       <h1><a class="logo"
@@ -26,7 +46,7 @@
            src="assets/img/logo.svg"></a></h1>
       <div class="tagline">
         <i>Caring hearts. Leading Minds.</i>
-      </div><a class="btn btn-primary btn-header" href="#guide">Request Appointment</a>
+      </div><a class="btn btn-primary btn-header open-form" href="#">Request Appointment</a>
     </div>
   </header>
   <main>
@@ -35,7 +55,7 @@
         <span class="subtitle">St. Michael's Obstetrics Department</span>
         <h2>We’re here to help you navigate your pregnancy journey.</h2>
         <p>Are you an expecting parent or planning a pregnancy? Learn important considerations for selecting your obstetrician, and how to get referred to the location of your choice.</p><br>
-        <a class="btn btn-primary" href="#guide">Request Appointment</a>
+        <a class="btn btn-primary open-form" href="#">Request Appointment</a>
       </div>
     </section>
     <section class="content rose centered bg-accents">
@@ -499,11 +519,11 @@
       <div class="container">
         <h3 class="underline">Kind words from our new mothers.</h3>
         <div class="quotes">
-          <a href="#" class="left-button"><img src="assets/img/arrow.svg" width="50" height="25"/>&nbsp;</a>
+          <!--a href="#" class="left-button"><img src="assets/img/arrow.svg" width="50" height="25"/>&nbsp;</a-->
           <p class="quote-item active" id="quote1">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</p>
           <p class="quote-item" id="quote2">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</p>
           <p class="quote-item" id="quote3">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</p>
-          <a href="#" class="right-button"><img src="assets/img/arrow.svg" width="50" height="25"/></a>
+          <!--a href="#" class="right-button"><img src="assets/img/arrow.svg" width="50" height="25"/></a-->
         </div>
       </div>
     </section>

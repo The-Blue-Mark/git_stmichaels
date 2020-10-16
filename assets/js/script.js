@@ -150,5 +150,15 @@ $(document).ready(function() {
     $(this).addClass('active');
   });
 
+  $('.open-form').click( function() {
+    $('body').addClass('open-form-overlay');
+  })
+
+  $('.form-overlay').click( function() {
+    $('body').removeClass('open-form-overlay');
+  })
+
+  $('.form-overlay .form-box').click(function(){return false;});
+
 });
 
