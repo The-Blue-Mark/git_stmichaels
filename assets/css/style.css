@@ -394,11 +394,9 @@ h5, h6 {
 
 .subtitle {
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 3px;
-  color: #e5bbbb;
-  text-transform: uppercase;
+  color: #563f82;
 }
 
 a {
@@ -423,6 +421,10 @@ a {
 }
 .rose .underline:before {
   background-color: #fff;
+}
+
+.no-top {
+  margin-top: 0;
 }
 
 input, select, textarea {
@@ -476,6 +478,10 @@ body.open-form-overlay .form-overlay {
   .form-overlay .form-box {
     padding: 20px 20px 5px;
   }
+}
+.form-overlay .form-box h1, .form-overlay .form-box h2, .form-overlay .form-box h3, .form-overlay .form-box h4, .form-overlay .form-box h5, .form-overlay .form-box h6 {
+  display: block;
+  text-align: center;
 }
 
 .form-box .fb-control {
@@ -717,7 +723,7 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
 }
 .banner span, .banner h2, .banner p {
   width: 50%;
-  max-width: 600px;
+  max-width: 400px;
 }
 @media (max-width: 800px) {
   .banner span, .banner h2, .banner p {
@@ -739,6 +745,7 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
   align-items: stretch;
   align-content: stretch;
   padding-top: 30px;
+  text-align: left;
 }
 .video-grid > * {
   flex: 0 0 100%;
@@ -822,6 +829,7 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
   background: #fff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   display: none;
+  text-align: left;
 }
 .team-cards .team-member.active {
   display: flex;
@@ -849,26 +857,29 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
 .tm-profile {
   position: relative;
   background-color: #a5bcd5;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 10px;
 }
 .tm-profile .tmp-image {
   width: 150px;
   height: 150px;
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -75px 0 0 -75px;
   border-radius: 999px;
   overflow: hidden;
   border: 4px solid #fff;
+  margin-bottom: 20px;
 }
 .tm-profile .tmp-image img {
-  position: absolute;
   width: 100%;
   height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.tm-profile .btn.btn-outline {
+  border-color: #fff;
+  color: #fff;
 }
 
 .tm-bio {
@@ -1092,6 +1103,7 @@ section.content.services {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
+  text-align: left;
 }
 .services-grid .sg-item p a {
   font-weight: 700;
@@ -1162,6 +1174,7 @@ section.testimonials .quotes {
   padding: 0 50px;
   position: relative;
   z-index: 98;
+  text-align: left;
 }
 section.testimonials .quotes a {
   display: block;
