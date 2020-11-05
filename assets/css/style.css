@@ -966,57 +966,6 @@ section.centered h1, section.centered h2, section.centered h3, section.centered 
     flex: 0 0 25%;
   }
 }
-.obstetrics-team > *:nth-child(2) {
-  order: 1;
-}
-.obstetrics-team > *:nth-child(3) {
-  order: 2;
-}
-.obstetrics-team > *:nth-child(10) {
-  order: 3;
-}
-.obstetrics-team > *:nth-child(7) {
-  order: 4;
-}
-.obstetrics-team > *:nth-child(6) {
-  order: 5;
-}
-.obstetrics-team > *:nth-child(11) {
-  order: 6;
-}
-.obstetrics-team > *:nth-child(8) {
-  order: 7;
-}
-.obstetrics-team > *:nth-child(1) {
-  order: 8;
-}
-.obstetrics-team > *:nth-child(16) {
-  order: 9;
-}
-.obstetrics-team > *:nth-child(15) {
-  order: 10;
-}
-.obstetrics-team > *:nth-child(9) {
-  order: 11;
-}
-.obstetrics-team > *:nth-child(14) {
-  order: 12;
-}
-.obstetrics-team > *:nth-child(13) {
-  order: 13;
-}
-.obstetrics-team > *:nth-child(17) {
-  order: 14;
-}
-.obstetrics-team > *:nth-child(4) {
-  order: 15;
-}
-.obstetrics-team > *:nth-child(12) {
-  order: 16;
-}
-.obstetrics-team > *:nth-child(5) {
-  order: 17;
-}
 .obstetrics-team a.team-item {
   padding: 2px 12px;
   font-size: 11px;

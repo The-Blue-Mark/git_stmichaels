@@ -700,24 +700,6 @@ section {
         @include break(desktop) {
             flex: 0 0 25%;
         }
-
-        &:nth-child(2)  { order: 1; } // 227
-        &:nth-child(3)  { order: 2; } // 202
-        &:nth-child(10) { order: 3; } // 186
-        &:nth-child(7)  { order: 4; } // 180
-        &:nth-child(6)  { order: 5; } // 169
-        &:nth-child(11) { order: 6; } // 164
-        &:nth-child(8)  { order: 7; } // 159
-        &:nth-child(1)  { order: 8; } // 154
-        &:nth-child(16) { order: 9; } // 145
-        &:nth-child(15) { order: 10; } // 143
-        &:nth-child(9)  { order: 11; } // 142
-        &:nth-child(14) { order: 12; } // 139
-        &:nth-child(13) { order: 13; } // 137
-        &:nth-child(17) { order: 14; } // 131
-        &:nth-child(4)  { order: 15; } // 130
-        &:nth-child(12) { order: 16; } // 123
-        &:nth-child(5)  { order: 17; } // 118
     }
 
     a.team-item {
