@@ -160,5 +160,10 @@ $(document).ready(function() {
 
   $('.form-overlay .form-box').click(function(){return false;});
 
+  $('.slick-list').slick({
+    arrows: true,
+    autoplay: true
+  });
+
 });
 

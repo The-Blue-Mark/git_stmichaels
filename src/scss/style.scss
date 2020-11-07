@@ -733,6 +733,8 @@ a.team-item {
 
 section.content.services {
     padding-top: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .services-grid {
@@ -825,8 +827,9 @@ section.content.services {
 
 section.testimonials {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     margin-top: -10vw;
+    
     .container {
         padding-top: 60px;
         background: $color-bg-rose;
@@ -859,51 +862,78 @@ section.testimonials {
         margin-top: 40px;
     }
 
-    .quotes {
-        display: block;
-        padding: 0 50px;
-        position: relative;
-        z-index: 98;
-        text-align: left;
-    
-        a {
-            display: block;
-            width: 50px;
-            height: 25px;
-            position: absolute;
-            top: 50%;
-            margin-top: -12.5px;
-            z-index: 99;
+    .slick-slider {
+        overflow: visible!important;
+    }
 
-            &:hover,
-            &:active {
-                opacity: .5;
+    .slick-list.slick-slider {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    button.slick-arrow {
+        display: block;
+        width: 50px;
+        height: 25px;
+        position: absolute;
+        top: 50%;
+        margin-top: -12.5px;
+        z-index: 99999999;
+        background: none;
+        border: 0;
+        overflow: hidden;
+        text-indent: -999px;
+        background: url(../../assets/img/arrow.svg) no-repeat 50% 50%;
+
+        &:hover,
+        &:active {
+            opacity: .5;
+        }
+
+        &.slick-prev {
+            left: -60px;
+            transform: rotate(-90deg);
+            cursor: pointer;
+
+            @include break(480 max) {
+                left: -50px;
             }
-    
-            &.left-button {
-                left: 0;
-                transform: rotate(-90deg);
-                cursor: pointer;
-            }
-    
-            &.right-button {
-                right: 0;
-                transform: rotate(90deg);
-                cursor: pointer;
+        }
+
+        &.slick-next {
+            right: -60px;
+            transform: rotate(90deg);
+            cursor: pointer;
+
+            @include break(480 max) {
+                right: -50px;
             }
         }
     }
 
-    p.quote-item {
+    .slick-list.draggable {
+        display: block;
+        position: relative;
+        z-index: 98;
+        text-align: left;
+    }
+
+    .quote-item {
+        position: relative;
+        z-index: 98;
         background: #fff;
         padding: 50px;
         font-size: 18px;
         line-height: 28px;
         font-style: italic;
-        display: none;
 
-        &.active {
-            display: block;
+        @include break(480 max) {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }

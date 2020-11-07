@@ -510,12 +510,10 @@
     <section class="centered testimonials">
       <div class="container">
         <h3 class="underline">Kind words from our new mothers.</h3>
-        <div class="quotes">
-          <!--a href="#" class="left-button"><img src="assets/img/arrow.svg" width="50" height="25"/>&nbsp;</a-->
-          <p class="quote-item active" id="quote1">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</p>
-          <p class="quote-item" id="quote2">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</p>
-          <p class="quote-item" id="quote3">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</p>
-          <!--a href="#" class="right-button"><img src="assets/img/arrow.svg" width="50" height="25"/></a-->
+        <div class="slick-list">
+          <div class="quote-item">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</div>
+          <div class="quote-item">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</div>
+          <div class="quote-item">"St. Michael’s showed me how important community was…being introduced to all of their social media initiatives, prenatal classes, and really friendly staff…"</div>
         </div>
       </div>
     </section>
@@ -580,6 +578,7 @@
     </footer>
   </main>
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> 
+  <script src="//code.jquery.com/jquery-migrate-3.3.1.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> 
   <script>
     var controller = new ScrollMagic.Controller();
@@ -589,6 +588,10 @@
           .setClassToggle(".btn-header", "active")
           .addTo(controller);
   </script> 
+  <!--carousel-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--end carousel-->
   <script async defer src="assets/js/script.js"></script>
 </body>
 </html>
