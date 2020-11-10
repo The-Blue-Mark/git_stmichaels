@@ -919,16 +919,28 @@ section.testimonials {
         position: relative;
         z-index: 98;
         text-align: left;
+        background: #fff;
+        cursor: move; /* fallback if grab cursor is unsupported */
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+        }
     }
 
     .quote-item {
         position: relative;
         z-index: 98;
-        background: #fff;
         padding: 50px;
         font-size: 18px;
         line-height: 28px;
         font-style: italic;
+        border: 0;
+        outline: 0;
 
         @include break(480 max) {
             padding: 20px;

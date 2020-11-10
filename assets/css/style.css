@@ -1172,15 +1172,24 @@ section.testimonials .slick-list.draggable {
   position: relative;
   z-index: 98;
   text-align: left;
+  background: #fff;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+}
+section.testimonials .slick-list.draggable:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
 }
 section.testimonials .quote-item {
   position: relative;
   z-index: 98;
-  background: #fff;
   padding: 50px;
   font-size: 18px;
   line-height: 28px;
   font-style: italic;
+  border: 0;
+  outline: 0;
 }
 @media (max-width: 480px) {
   section.testimonials .quote-item {
